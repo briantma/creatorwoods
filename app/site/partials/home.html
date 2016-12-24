@@ -1,0 +1,194 @@
+<div id="top"></div>
+<div class="jumbotron hero" ng-click="ctrl.scrollTo(4)">
+	<div class = "hero__container">
+		<video class="hero__container__video" autoplay="true" loop="true">
+			<source  type="video/mp4" src="assets/images/demoreel_iterencei_website.mp4"/>	
+		</video>
+	</div>
+</div>
+
+<div class="logo" ng-click="ctrl.scrollTo(4)">
+	<!-- <div class="logo__cam">
+		<img src="assets/images/logo_cam.png">
+	</div> -->
+	<div class="logo__name" ng-class="ctrl.namePos">
+		<img src="assets/images/creatorwoods.png">
+	</div>
+	<div ng-style="{'display' : ctrl.chevDisplay}" class=" logo__chev">
+		<i class="fa fa-chevron-down animated pulse infinite" aria-hidden="true"></i>
+	</div>
+</div>
+
+<div class="social" ng-style="{'opacity' : ctrl.opacity, 'display': ctrl.socialDisplay}">
+	<div class="social__iconBox">
+		<a class="social__iconBox__icon" href="https://www.youtube.com/user/ITerenceI" target="_blank">
+			<i class="fa fa-youtube-square social__iconBox__yt" aria-hidden="true"></i>
+		</a>
+		<a class="social__iconBox__icon" href="https://www.facebook.com/ITERENCEI/?fref=ts" target="_blank">
+			<i class="fa fa-facebook-square social__iconBox__fb" aria-hidden="true"></i>
+		</a>
+		<div class="social__iconBox__igBox">
+			<a class="social__iconBox__igBox__white social__iconBox__icon" href="https://www.instagram.com/iterencei/" target="_blank">
+				<i class="fa fa-instagram social__iconBox__igBox__white__ig" aria-hidden="true"></i>
+			</a>	
+			<a class="social__iconBox__igBox__colour social__iconBox__icon" href="https://www.instagram.com/iterencei/" target="_blank">
+				<img src="assets/images/ig_logo.png" class="social__iconBox__igBox__colour__ig">
+			</a>
+		</div>
+	</div>
+</div>
+
+<div id="cover">
+	<div class="navBar" ng-style="{'position':ctrl.navBarPos, 'opacity' : ctrl.opacity}">
+		<div class="navBar__tabs">
+			<div><h4 class="{{ctrl.isSelected('services')}}" ng-click="ctrl.scrollTo(1)">SERVICES</h4></div>
+			<div><h4 class="{{ctrl.isSelected('about')}}" ng-click="ctrl.scrollTo(2)">ABOUT</h4></div>
+			<div><h4 class="{{ctrl.isSelected('contact')}}" ng-click="ctrl.scrollTo(3)">CONTACT</h4></div>
+		</div>
+	</div>
+	<div class="services container" ng-style="{'opacity' : ctrl.opacity }">
+			<h2 class="services__title">SERVICES</h2>
+			<div class="services__list row">
+				<div id="1" ng-click="ctrl.toggleOpac(1)" class="services__list__item col-md-6 col-sm-12 col-xs-12">
+					<div class="services__list__item__sb">
+						<!-- <img src="assets/images/smallbusiness.jpg"> -->
+						<h3 ng-style="{'opacity': ctrl.isOpac1a}" class="services__list__item__title">SMALL BUSINESSES</h3>
+						<div ng-style="{'opacity': ctrl.isOpac1b}" class=services__list__item__hoverText><p>As a small business myself, I have seen large growth in sales, audience and traction because of well-made and original video content. My goal is to deliver similar results for your business. Let’s meet up for a coffee! I’d love to share more.</p></div>
+					</div>
+				</div>
+				<div id="2" ng-click="ctrl.toggleOpac(2)" class="services__list__item col-md-6 col-sm-12 col-xs-12">
+					<div class="services__list__item__wed">
+						<!-- <img src="assets/images/weddings.jpg"> -->
+						<h3 ng-style="{'opacity': ctrl.isOpac2a}" class="services__list__item__title">WEDDINGS</h3>
+						<div ng-style="{'opacity': ctrl.isOpac2b}" class=services__list__item__hoverText>
+						<p>I believe wedding videos are valuable memories that are created to be viewed throughout a marriage. For that reason, I strive to deliver the most authentic & creative film that is not limited to capturing your special day but also tells your story and your identity.</p></div>
+					</div>
+					
+				</div>
+				<div id="3" ng-click="ctrl.toggleOpac(3)" class="services__list__item col-md-6 col-sm-12 col-xs-12">
+					<div class="services__list__item__su">
+						<!-- <img src="assets/images/startups.jpg"> -->
+						<h3 ng-style="{'opacity': ctrl.isOpac3a}" class="services__list__item__title">START UPS</h3>
+						<div ng-style="{'opacity': ctrl.isOpac3b}" class=services__list__item__hoverText><p>Start Ups bring forth new ideas and I believe it is important to clearly communicate those ideas. Videos are great tools to accomplish that. Your start up video will be created with the intention of generating hype, brand loyalty, funds and potentially sales!</p></div>
+					</div>
+					
+				</div>
+				<div id="4" ng-click="ctrl.toggleOpac(4)" class="services__list__item col-md-6 col-sm-12 col-xs-12">
+					<div class="services__list__item__corp">
+						<<!-- img src="assets/images/corporate.jpg"> -->
+						<h3 ng-style="{'opacity': ctrl.isOpac4a}" class="services__list__item__title">CORPORATE</h3>
+						<div ng-style="{'opacity': ctrl.isOpac4b}" class=services__list__item__hoverText><p>From event coverage to promotional videos, I believe in creating videos that will generate an emotional response from people to participate and follow your brand</p></div>
+					</div>
+				</div>
+			</div>
+	</div>
+	<div class="row aboutnquote container">
+		<!-- <div class="col-md-6 col-sm-6 col-xs-12 portfolio">
+			<div class="portfolio__contents">
+				<h2 class="portfolio__contents__title">PORTFOLIO</h2>
+					<a class="portfolio__contents__yt" href="https://www.youtube.com/user/ITerenceI" target="_blank">
+						<i class="fa fa-youtube-square" aria-hidden="true"></i>
+						<p><strong>iterencei</strong></p>
+					</a>
+					<br/>
+					<a class="portfolio__contents__fb" href="https://www.facebook.com/ITERENCEI/?fref=ts" target="_blank">
+						<i class="fa fa-facebook-square" aria-hidden="true"></i>
+						<p><strong>iterencei</strong></p>
+					</a>
+					<br/>
+					<a class="portfolio__contents__ig" href="https://www.instagram.com/iterencei/" target="_blank">
+						<i class="fa fa-instagram" aria-hidden="true"></i>
+						<div class="portfolio__contents__ig__img"></div>
+						<p><strong>iterencei</strong></p>
+					</a>
+			</div>
+		</div> -->
+		<!-- <div class="col-md-offset-2 col-sm-offset-2 col-md-8 col-sm-8 col-xs-12 about"> -->
+		<h2 class="demotitle">DEMO REEL</h2>
+		<div class="vidcontainer">
+
+			<iframe src="//player.vimeo.com/video/191063279" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+		</div>
+		<!-- <div class="about"> -->
+			<div id="about"></div>
+			<h2  class="about__title">ABOUT ME</h2>
+			<div class="about__text col-md-12">
+				<p>With 8 years of practice in filmmaking, Terence Ho brings forth experience and a strong desire to create dynamic, creative and authentic videos.</p>
+				<p>Terence is available as a cinematographer, director and editor with experience across multiple genres from start-ups, businesses to corporates, music videos, and weddings.</p>
+				<p>We strive to collaborate with your vision to create the best video. Terence understands the power of video and takes great care in delivering great storytelling and professional cinematic videos that produce positive results for you.</p>
+				<p>Terence currently shoots on the Canon C100 Mark 2 and DJI Phantom 3.</p>
+				<p>Contact us. We are excited to hear your vision. Have a great day!</p>
+				<br>
+				<p>A few clients I’ve worked with ranging from start-up, small business, corporation and wedding:
+				</p>
+			</div>
+			<div class="about__images__container" class="col-md-12">
+				<img class="about__images" src="assets/images/pwc.png">
+				<img class="about__images" src="assets/images/oem.png">
+				<img class="about__images" src="assets/images/oasis.png">
+				<img class="about__images" src="assets/images/chapnsam.png">
+				<img class="about__images" src="assets/images/sienci.png">
+			</div>
+		<!-- </div> -->
+				
+		<!-- </div> -->
+		<div class="col-md-offset-2 col-sm-offset-2 col-md-8 col-sm-8 col-xs-12 quote">
+			<div id="contact"></div>
+			<div class="quote__contents">
+				<h2 class="quote__contents__title">CONTACT</h2>
+				<p>* required</p>
+				<form  ng-submit="ctrl.sendEmail(ans)">
+				  <div class="form-group">
+				    <input ng-model="ctrl.comp_name" type="text" class="form-control" id="companyName" placeholder="COMPANY NAME">
+				  </div>
+				  <div class="form-group">
+				    <input ng-model="ctrl.cont_name" type="text" class="form-control" id="contactName" placeholder="* CONTACT NAME" required>
+				  </div>
+				  <div class="form-group">
+				    <input ng-model="ctrl.phone" type="text"  class="form-control" id="phoneNumber" placeholder="* PHONE" required>
+				  </div>
+				  <div class="form-group">
+				      <input ng-model="ctrl.email" type="email"  class="form-control" id="emailAddress" placeholder="* EMAIL" required>
+				  </div>
+				  <div class="form-group">
+					<select ng-model="ctrl.budget" class="form-control" required>
+					  	<option disabled="disabled" value="">* BUDGET</option>
+					  	<option>$500-1000</option>
+					  	<option>$1000-1500</option>
+					  	<option>$1500-2000</option>
+					  	<option>$2500-3000</option>
+					  	<option>$3000+</option>
+					  	<option>Not Sure</option>
+					</select>
+				  </div>
+				  <div class="form-group">
+				  	<label>* ANTI-SPAM: Please answer the following question: {{ctrl.rand1}} + {{ctrl.rand2}} = ?</label>
+				  	<input ng-model="ans" class="form-control" placeholder="ANSWER">
+				  </div>
+				  <button type="submit" class="quote__contents__btn btn btn-default">Send</button>
+				</form>
+			</div>
+		</div>
+	</div>
+	<div class="footer">
+	<div class="footer__social social" ng-style="{'opacity' : ctrl.opacity, 'display': ctrl.socialDisplay}">
+	<div class="social__iconBox">
+		<a class="social__iconBox__icon" href="https://www.youtube.com/user/ITerenceI" target="_blank">
+			<i class="fa fa-youtube-square social__iconBox__yt" aria-hidden="true"></i>
+		</a>
+		<a class="social__iconBox__icon" href="https://www.facebook.com/ITERENCEI/?fref=ts" target="_blank">
+			<i class="fa fa-facebook-square social__iconBox__fb" aria-hidden="true"></i>
+		</a>
+		<div class="social__iconBox__igBox">
+			<a class="social__iconBox__igBox__white social__iconBox__icon" href="https://www.instagram.com/iterencei/" target="_blank">
+				<i class="fa fa-instagram social__iconBox__igBox__white__ig" aria-hidden="true"></i>
+			</a>	
+			<a class="social__iconBox__igBox__colour social__iconBox__icon" href="https://www.instagram.com/iterencei/" target="_blank">
+				<img src="assets/images/ig_logo.png" class="social__iconBox__igBox__colour__ig">
+			</a>
+		</div>
+	</div>
+</div>
+	</div>
+
+</div>
