@@ -173,7 +173,16 @@ input, button, select, label {
       display: block;
       margin: 0 auto 30px auto;
       background-size: cover;
-      transition: all 1s ease; }
+      transition: all 1s ease;
+      /*&:hover{
+          
+          &>h3{
+              opacity:0 !important;
+          }
+          &>div {
+              opacity:1 !important;
+          }
+      }*/ }
       .services__list__item > div > img {
         min-height: 100%;
         width: 100%;
@@ -185,10 +194,6 @@ input, button, select, label {
         position: absolute;
         top: -70px;
         left: 0; }
-      .services__list__item > div:hover > h3 {
-        opacity: 0 !important; }
-      .services__list__item > div:hover > div {
-        opacity: 1 !important; }
     .services__list__item__sb {
       background-image: url("../images/smallbusiness.jpg");
       background-size: cover;
