@@ -130,7 +130,8 @@ input, button, select, label {
 
 .services {
   position: relative;
-  padding: 15px 75px 45px 75px;
+  padding-top: 75px;
+  padding-bottom: 75px;
   top: 65px;
   width: 100%;
   display: block; }
