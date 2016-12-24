@@ -434,7 +434,10 @@ input, button, select, label {
   .footer {
     display: block; }
     .footer__social {
-      display: block; } }
+      display: block; }
+
+  .services__list__item__hoverText {
+    height: 75%; } }
 @media (max-width: 1074px) and (min-width: 992px) {
   .services__list__item > div > img {
     height: 100%;
