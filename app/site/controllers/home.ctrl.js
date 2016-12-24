@@ -6,7 +6,8 @@
 		.controller("HomeCtrl", HomeCtrl);
 
 	function HomeCtrl($scope, $window, $state, $http, toastr){
-		var homeVm = this;
+		document.getElementById('demovid').play();
+    var homeVm = this;
 
   		homeVm.opacity = 0;
   		homeVm.namePos = "logo__name--Abs";
